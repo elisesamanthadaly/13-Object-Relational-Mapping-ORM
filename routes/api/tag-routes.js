@@ -20,6 +20,9 @@ router.get('/:id', (req, res) => {
     include: [{ model: Product }]
   }).then((tagData) => {
     res.json(tagData);
+  })
+  .catch((err) => {
+    res.json(err);
   });
 });
 
@@ -28,9 +31,6 @@ router.post('/', (req, res) => {
   Tag.create(req.body)
   .then((newTag) => {
     res.json(newTag);
-  })
-  .catch((err) => {
-    res.json(err);
   });
 });
 
@@ -50,7 +50,6 @@ router.put('/:id', (req, res) => {
       res.json(updatedTag);
     })
     .catch((err) => {
-      console.log(err);
       res.json(err);
     });
 });
@@ -65,7 +64,9 @@ router.delete('/:id', (req, res) => {
     .then((deletedTag) => {
       res.json(deletedTag);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 module.exports = router;

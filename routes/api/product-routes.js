@@ -22,6 +22,9 @@ router.get('/:id', (req, res) => {
     include: [{ model: Category }, { model: Tag }]
   }).then((productData) => {
     res.json(productData);
+  })
+  .catch((err) => {
+    res.json(err);
   });
 });
 
@@ -109,7 +112,9 @@ router.delete('/:id', (req, res) => {
     .then((deletedProduct) => {
       res.json(deletedProduct);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 module.exports = router;
