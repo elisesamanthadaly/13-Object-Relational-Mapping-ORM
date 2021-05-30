@@ -7,7 +7,7 @@ The E-Commerce Back End application's GitHub repository can be found [here](http
 
 
 ## Installation
-Clone the repository to your local machine. You should also have Git Bash, Node.js, and MySQL/MySQL Workbench installed. You'll need to run npm install from the terminal at the root directory of the local repository to install the application's dependencies (express, sequelize, mysql, and dotenv). You will also need to create a .env file (containing DB_USER=root, DB_PW=YourPassword, DB_NAME='ecommerce_db') at this location. Before running the application, create its database in MySQL Workbench. You can copy/paste the contents of schema.sql into a MySQL query to do so.
+Clone the repository to your local machine. You should also have Git Bash, Node.js, and MySQL/MySQL Workbench installed. You'll need to run npm install from the terminal at the root directory of the local repository to install the application's dependencies (express, sequelize, mysql, and dotenv). You will also need to create a .env file (containing DB_USER=root, DB_PW=YourPassword, DB_NAME='ecommerce_db') at this location. Before running the application, create its database in MySQL Workbench. You can copy/paste the contents of db/schema.sql into a MySQL query to do so.
 
 
 ## Usage
