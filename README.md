@@ -1,4 +1,4 @@
-# 13-Object-Relational-Mapping-ORM
+# 13 Object-Relational Mapping (ORM)
 # E-Commerce Back End
 
 This application is the back end of a hypothetical e-commerce website. It contains models and routes for a variety of products, product categories, and product tags, and connects to a MySQL database. Using Insomnia, various routes (GET, GET by id, POST, PUT, and DELETE) for these three items can be visualized, as the application currently has no front end.
